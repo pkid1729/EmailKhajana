@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "SaveEmailIntoFile";
+}
+
+<h2>@ViewBag.Email</h2>
+
+<h2>@ViewBag.Password</h2>
+<form method="post" action="/Home/SaveEmailIntoFile">
+    Email <br />
+    <input type="text" name="Email" value="" /><br />
+    Contact Name:<br />
+    @*<input type="text" name="Pass" value="" /><br /><br />*@
+    <input type="submit" value="Submit" class="submit" />
+</form>
